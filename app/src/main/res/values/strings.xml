@@ -1,3 +1,10 @@
 <resources>
     <string name="app_name">CSS Spotlight Performances</string>
+    <string name="web_info">Web Info</string>
+    <string name="add_to_calendar">Add to Calendar</string>
+    <string name="css_choirs_at_home_nthursday_march_2_2017_7_30_9_30_p_m_nmitchell_auditorium">CSS Choirs at Home \nThursday, March 2, 2017, 7:30 – 9:30 p.m.\nMitchell Auditorium</string>
+    <string name="map">Map</string>
+    <string name="sal_colloquium_the_robot_next_door_nfriday_february_24_2017_3_40_4_40_p_m_ntower_hall_4119">SAL Colloquium “The Robot Next Door” \nFriday, February 24, 2017, 3:40 – 4:40 p.m.\nTower Hall 4119</string>
+    <string name="twin_ports_choral_project_nfriday_february_24_2017_7_30_p_m_nmitchell_auditorium">Twin Ports Choral Project \nFriday, February 24, 2017, 7:30 p.m.\nMitchell Auditorium</string>
+    <string name="upcoming_events">Upcoming Events</string>
 </resources>

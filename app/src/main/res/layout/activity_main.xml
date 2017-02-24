@@ -10,12 +10,13 @@
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="css.cis3334.intentsperformances.MainActivity"
-    android:orientation="vertical">
+    android:orientation="vertical"
+    android:weightSum="1">
 
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Upcoming Events"
+        android:text="@string/upcoming_events"
         android:textSize="18sp"
         android:textAlignment="center" />
 
@@ -29,14 +30,70 @@
             android:layout_height="wrap_content"
             app:srcCompat="@mipmap/spotlight1"
             android:id="@+id/imageButton"
-            android:layout_weight="1" />
+            android:layout_weight="1"
+            android:contentDescription=""
+            tools:ignore="ContentDescription" />
 
         <TextView
-            android:text="SAL Colloquium “The Robot Next Door” \nFriday, February 24, 2017, 3:40 – 4:40 p.m.\nTower Hall 4119"
+            android:text="@string/sal_colloquium_the_robot_next_door_nfriday_february_24_2017_3_40_4_40_p_m_ntower_hall_4119"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:id="@+id/textView"
+            android:id="@+id/textViewRobot"
             android:layout_weight="1" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.05"
+        tools:ignore="InefficientWeight">
+
+        <Button
+            android:text="Web Info"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/button1WebInfo"
+            android:layout_weight="1"
+            tools:ignore="ButtonStyle,HardcodedText,NestedWeights" />
+
+        <Button
+            android:text="@string/add_to_calendar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/button1Calendar"
+            android:layout_weight="1"
+            tools:ignore="ButtonStyle" />
+
+        <Button
+            android:text="@string/map"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/button1map"
+            android:layout_weight="1"
+            tools:ignore="ButtonStyle" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageButton
+            android:layout_width="83dp"
+            android:layout_height="wrap_content"
+            app:srcCompat="@mipmap/spotlight_choir"
+            android:id="@+id/imageButton2"
+            tools:ignore="ContentDescription" />
+
+        <TextView
+            android:text="@string/css_choirs_at_home_nthursday_march_2_2017_7_30_9_30_p_m_nmitchell_auditorium"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:id="@+id/textViewChoir"
+            tools:ignore="InefficientWeight" />
+
     </LinearLayout>
 
     <LinearLayout
@@ -48,26 +105,83 @@
             android:text="Web Info"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:id="@+id/button1WebInfo"
-            android:layout_weight="1" />
+            android:id="@+id/button2WebInfo"
+            android:layout_weight="1"
+            tools:ignore="ButtonStyle,HardcodedText" />
 
         <Button
             android:text="Add to Calendar"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:id="@+id/button1Calendar"
-            android:layout_weight="1" />
+            android:id="@+id/button2Calendar"
+            android:layout_weight="1"
+            tools:ignore="ButtonStyle,HardcodedText" />
 
         <Button
             android:text="Map"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:id="@+id/button1map"
-            android:layout_weight="1" />
+            android:id="@+id/button2Map"
+            android:layout_weight="1"
+            tools:ignore="ButtonStyle,HardcodedText" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="1">
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@mipmap/spotlight_twin_ports"
+            android:id="@+id/imageButton3"
+            android:layout_weight="0.04"
+            tools:ignore="ContentDescription" />
+
+        <TextView
+            android:text="@string/twin_ports_choral_project_nfriday_february_24_2017_7_30_p_m_nmitchell_auditorium"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textViewTwinPorts"
+            android:layout_weight="0.04" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:text="@string/web_info"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/button3WebInfo"
+            android:layout_weight="1"
+            tools:ignore="ButtonStyle" />
+
+        <Button
+            android:text="Add to Calendar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/button3Calendar"
+            android:layout_weight="1"
+            tools:ignore="ButtonStyle,HardcodedText" />
+
+        <Button
+            android:text="Map"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/button3Map"
+            android:layout_weight="1"
+            tools:ignore="ButtonStyle,HardcodedText" />
     </LinearLayout>
 
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/textViewStatus" />
+
 </LinearLayout>
